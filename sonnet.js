@@ -2,10 +2,9 @@ let sonnetDiv = document.getElementById('sonnet').innerHTML
 
 
 let orphanIndex = sonnetDiv.search('orphans');
-
+console.log(orphanIndex)
 let charNum = sonnetDiv.length;
+console.log(charNum);
 
- sonnetDiv = sonnetDiv.replace("winter", "yuletide");
+document.getElementById('sonnet').innerHTML = sonnetDiv.replace(/the /g, 'a large ').replace("winter", "yuletide");
 
- sonnetDiv = sonnetDiv.replace(/the /g, 'a large ');
-  console.log(sonnetDiv);
